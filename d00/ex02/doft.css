@@ -1,0 +1,156 @@
+body { height: 100%;
+	background-color:#505050;
+}
+.top {
+	position: relative;
+	width: 76%;
+	height: 7vw;
+	margin-top: 2%;
+	margin-left: 12%;
+	margin-right: 12%;
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 13px 13px 12px #000;
+}
+.blockleft {
+	text-align: center;
+	width: 8%;
+	height: 24vw;
+	float: left;
+	margin-left: 14%;
+	margin-top: 1%;
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 13px 13px 12px #000;
+}
+
+.blockright {
+	text-align: center;
+	width: 8%;
+	height: 24vw;
+	float: right;
+	margin-right: 14%;
+	margin-top: 1%;
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 13px 13px 12px #000;
+}
+.center {
+	text-align: center;
+	vertical-align: middle;
+	width: 52%;
+	float: left;
+	margin-left: 2%;
+	margin-top: 1%;
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 13px 13px 12px #000;
+	
+}
+.doft {
+	margin-left: 1%;
+	width: 30%;
+	height: 90%;
+	overflow: hidden;
+}
+.loupe {
+	position: absolute;
+	top: 8%;
+	left: 79%;
+	height: 107%;
+	width: 18%;
+}
+.reload {
+	float: right;
+	margin: 1% 1% 0% 0%;
+	width: 1.5%;
+}
+.close {
+	float: right;
+	margin: 7% -1.5% 0% 0%;
+	width: 1.5%;
+}
+.lefttop {
+	width: 50%;
+	margin: 10% 0% 0% 0%;
+}
+.leftmid {
+	width: 50%; 
+	margin: 5% 0% 0% 0%;
+}
+.leftbot {
+	width: 50%; 
+	margin: 0% 0% 10% 0%;
+}
+.wall {
+	width: 80%;
+	height: 4vw;
+	margin: 0% 10% 10% 10%;
+	background-image: url("resources/brick.jpg");
+}
+.towel {
+	width: 50%; 
+	margin: 0% 0% 5% 0%;
+}
+.cluster {
+	width: 98%;
+	margin: 1% 1% 1% 1%;
+	height: 30vw;
+}
+.pop-up {
+	position: absolute;
+	text-align: left;
+	margin-left: 7%;
+	margin-top: 28%;
+	width: 30%;
+	height: 12vw;
+	background-color: #8CFD8E;
+	border-radius: 10px;
+	box-shadow: 13px 13px 12px #000;
+}
+.top_text {
+	margin-left: 2%;
+	font-size: 1vw;
+	font-family: Arial, serif;
+}
+.big_text {
+	font-size: 2vw;
+}
+.strange_text {
+	text-shadow: 1vw 0.4vw 0.5vw #D00;
+}
+.search_text {
+	margin-top: -2%;
+	margin-bottom: 1%;
+	margin-left: 2%;
+	font-size: 1vw;
+	font-family: Arial, serif;
+	font-style: italic;
+}
+.search {
+	margin-left: 2%;
+	text-align: left;
+	width: 100%
+}
+.searchbar {
+	float: left;
+	width: 65%;
+	height: 1vw;
+}
+.button {
+	text-align: left;
+	float: left;
+	width: 20%;
+	font-size: 1vw;
+	height: 1.5vw;
+	margin-left: 2%;
+	border-radius: 0px;
+}
+.chair {
+	shape: "rect";
+	coords: 380,380,560,660;
+}
+.mac {
+	shape: "rect";
+	coords: 930,360,1180,580;
+}
