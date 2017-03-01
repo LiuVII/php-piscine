@@ -47,13 +47,12 @@ with h.add(table()):
 						with t.add(td()):
 							div(" ",cls="cell")
 						cols += 1		
-					with t.add(td()):
+					with t.add(td(cls=groups[el['group']])):
 						if el['group'] in exceptions:
-							attr(_id=groups[el['group']])
 							with div(cls="cell"):
 								div(el['small'], cls='element')
 						else:			
-							with div(cls="cell", _id=groups[el['group']]):
+							with div(cls="cell"):
 								div(str(round(el['molar'], 4)), cls='molar')
 								div(el['small'], cls='element')
 								div(str(el['number']), cls='num')							
@@ -70,9 +69,9 @@ with h.add(table()):
 					with t.add(td()):
 						div(" ",cls="cell")
 					cols += 1		
-				with t.add(td()):			
-					with div(cls="cell", _id=groups[el['group']]):
-						div(str(el['molar']), cls='molar')
+				with t.add(td(cls=groups[el['group']])):			
+					with div(cls="cell"):
+						div(str(round(el['molar'], 4)), cls='molar')
 						div(el['small'], cls='element')
 						div(str(el['number']), cls='num')						
 				cols += 1
