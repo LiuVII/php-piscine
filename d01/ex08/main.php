@@ -9,4 +9,5 @@ if (ft_is_sort($tab))
 	echo "The array is sorted\n";
 else
 	echo "The array is not sorted\n";
+print_r($tab);
 ?>

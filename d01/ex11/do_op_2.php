@@ -17,8 +17,50 @@ function do_op($a, $b, $func)
 	}
 }
 
-if ($argc != 4)
+if ($argc != 2)
 	echo "Incorrect Parameters\n";
 else
-	echo do_op(trim($argv[1]), trim($argv[3]), trim($argv[2]))."\n";
+{
+	if (sizeof($arr=explode("+", $argv[1])) == 2)
+	{
+		if (is_numeric(trim($arr[0])) && is_numeric(trim($arr[1])))
+		{
+			echo do_op(trim($arr[0]), trim($arr[1]), '+')."\n";
+			return ;
+		}
+	}
+	else if (sizeof($arr=explode("-", $argv[1])) == 2)
+	{
+		if (is_numeric(trim($arr[0])) && is_numeric(trim($arr[1])))
+		{
+			echo do_op(trim($arr[0]), trim($arr[1]), '-')."\n";
+			return ;
+		}
+	}
+	else if (sizeof($arr=explode("*", $argv[1])) == 2)
+	{
+		if (is_numeric(trim($arr[0])) && is_numeric(trim($arr[1])))
+		{
+			echo do_op(trim($arr[0]), trim($arr[1]), '*')."\n";
+			return ;
+		}
+	}
+	else if (sizeof($arr=explode("/", $argv[1])) == 2)
+	{
+		if (is_numeric(trim($arr[0])) && is_numeric(trim($arr[1])))
+		{
+			echo do_op(trim($arr[0]), trim($arr[1]), '/')."\n";
+			return ;
+		}
+	}
+	else if (sizeof($arr=explode("%", $argv[1])) == 2)
+	{
+		if (is_numeric(trim($arr[0])) && is_numeric(trim($arr[1])))
+		{
+			echo do_op(trim($arr[0]), trim($arr[1]), '%')."\n";
+			return ;
+		}
+	}
+	echo "Syntax Error\n";
+}
 ?>

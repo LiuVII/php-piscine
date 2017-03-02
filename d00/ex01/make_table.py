@@ -50,13 +50,13 @@ with h.add(table()):
 					with t.add(td(cls=groups[el['group']])):
 						if el['group'] in exceptions:
 							with div(cls="cell"):
-								div(el['small'], cls='element')
+								div(el['small'], cls='element', contenteditable="true")
 						else:			
 							with div(cls="cell"):
-								div(str(round(el['molar'], 4)), cls='molar')
-								div(el['small'], cls='element')
-								div(str(el['number']), cls='num')							
-					cols += 1	
+								div(str(round(el['molar'], 4)), cls='molar', contenteditable="true")
+								div(el['small'], cls='element', contenteditable="true")
+								div(str(el['number']), cls='num', contenteditable="true")			
+					cols += 1
 			t = tr()
 			t.add(td(div(" ",cls="cell")))
 		else:
@@ -68,12 +68,12 @@ with h.add(table()):
 				while (cols < el['position']):
 					with t.add(td()):
 						div(" ",cls="cell")
-					cols += 1		
-				with t.add(td(cls=groups[el['group']])):			
+					cols += 1
+				with t.add(td(cls=groups[el['group']])):
 					with div(cls="cell"):
-						div(str(round(el['molar'], 4)), cls='molar')
-						div(el['small'], cls='element')
-						div(str(el['number']), cls='num')						
+						div(str(round(el['molar'], 4)), cls='molar', contenteditable="true")
+						div(el['small'], cls='element', contenteditable="true")
+						div(str(el['number']), cls='num', contenteditable="true")
 				cols += 1
 print(h)
 # with open("elems.html", 'w') as out:
