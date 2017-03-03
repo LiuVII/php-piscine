@@ -2,6 +2,7 @@
 <?php
 function do_op($a, $b, $func)
 {
+	echo $func;
 	if ($func == '+')
 		return $a + $b;
 	else if ($func == '-')
@@ -14,6 +15,10 @@ function do_op($a, $b, $func)
 			return $a / $b;
 		else if ($func == '%')
 			return $a % $b;
+	}
+	else
+	{
+		echo "good\n";
 	}
 }
 

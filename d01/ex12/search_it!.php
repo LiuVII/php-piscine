@@ -3,7 +3,7 @@
 if ($argc >= 3)
 {
 	$search = $argv[1];
-	$ret = "";
+	$ret = null;
 	foreach ($argv as $key => $value) 
 	{
 		if ($key > 1)
@@ -13,6 +13,7 @@ if ($argc >= 3)
 				$ret = $arr[1]."\n";
 		}
 	}
-	echo $ret;
+	if ($ret != null)
+		echo $ret."\n";
 }
 ?>

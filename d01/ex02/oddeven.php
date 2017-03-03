@@ -15,4 +15,5 @@ while ($line = fgets(STDIN))
 		echo "'$line' is not a number\n";
 	echo "Enter a number: ";
 }
+echo "\n";
 ?>

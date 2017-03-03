@@ -30,9 +30,16 @@ function ft_strcmp($str1, $str2)
 	return ($len1 - $len2);
 }
 
+function isempty($str)
+{
+	if ($str == "")
+		return 0;
+	return 1;
+}
+
 function ft_split($line)
 {
-	$arr = array_filter(explode(" ", $line));
+	$arr = array_filter(explode(" ", $line), "isempty");
 	usort($arr, "ft_strcmp");
 	return $arr;
 }
