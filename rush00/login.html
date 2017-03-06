@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+		<style type="text/css">
+			body {
+				background-color: rgb(34, 49, 63)
+			}
+			.text {
+				color: white;
+				font-family: PT Sans;
+				font-size: 1vw;
+				text-align: center;
+			}
+			.passwd {
+				color: white;
+				font-family: PT Sans;
+				font-size: 1vw;
+				text-align: center;
+			}
+			.form {
+				position: relative;
+				margin: auto;
+				margin-top: 30%;
+				width: 30%;
+				height: 25vw;
+				background-color: rgb(44, 62, 80);
+				border-radius: 1vw;
+				box-shadow: 1vw 1vw 1vw #000;
+			}
+			.headline {
+				padding-top: 2%;
+				padding-bottom: 0%;
+				color: white;
+				font-family: PT Sans;
+				font-style: bold;
+				font-size: 2vw;
+				text-align: center;
+			}
+			.field {
+				margin-left: 30%;
+				width: 40%;
+				height: 2vw;
+			}
+			.submit {
+				text-align: center;
+				width: 30%;
+				font-size: 1vw;
+				height: 2.5vw;
+				margin: 4% 35%;
+				background-color: white;
+				border-radius: 0.5vw;
+				border-color: rgb(52, 73, 94);
+				box-shadow: 0.2vw 0.2vw 0.2vw #000;
+			}
+			.signup {
+				position: absolute;
+				text-align: center;
+				color: #000;
+				float: right;
+				right: 35%;
+				bottom: 4%;
+				width: 30%;
+				font-size: 1.5vw;
+				height: 2.5vw;  
+				background-color: white;
+				border-radius: 0.5vw;
+				border-color: rgb(52, 73, 94);
+				box-shadow: 0.2vw 0.2vw 0.2vw #000;
+				text-decoration: none;
+			}
+			.goback {
+				position: absolute;
+				text-align: center;
+				color: white;
+				float: left;
+				left: 5%;
+				bottom: 2%;
+				font-size: 1.5vw;
+				height: 2.5vw;
+				
+			}
+			.line {
+				margin-top: 0vw;
+			}
+		</style>
+	</head>
+	<body>
+		<form class ="form" action="login.php" method="POST">
+			<p class="headline">Login</p>
+			<p class="text"> Username: </p> 
+			<input class="field" name="login" value=""/>
+			<p class="passwd"> Password: </p> 
+			<input class="field" name="passwd" value=""/>
+			<input class="submit" type="submit" name="submit" value="OK"/>
+			<hr class="line">
+			<a href="sign_up.html" class="signup" name="signup">Sign up</a>
+			<a href="index.php" class="goback" type="submit" name="goback">Back<a/>
+		</form>
+	</body>
+</html>
